@@ -1,6 +1,39 @@
 .todo_sect{
-    min-height: 70vh;
     display:grid;
     place-items:center;
     gap:5%;
+}
+.todo__header{
+    margin-top:100px;
+    color:teal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.todo__header::after{
+    content:'';
+    display:block;
+    width:50%;
+    height:2px;
+    margin:auto;
+    background-color:#111;
+}
+.todo__task input{
+    padding:15px 30px;
+    border-color: #43b3ae;
+}
+.todo__task input::placeholder{
+    color:#111;
+    letter-spacing: 0.08em;
+
+}
+.todo__button{
+    padding:5px 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #c9ffe5;
+    color:#696969;
+    font-weight: 800;
+    letter-spacing: 0.1em;
 }
