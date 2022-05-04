@@ -9,6 +9,12 @@ function Hero() {
       const [superPower,setSuperPower] = useState('');
       const [displayCharacter, setDisplayCharacter] = useState(false);
 
+      let handleSubmit = (e) =>{
+            e.preventDefault();
+      
+            setDisplayCharacter(true) 
+      }
+
   return (
     <div className="hero-sect">
       <h1>Build A Hero </h1>
@@ -42,9 +48,7 @@ function Hero() {
         }}
       />
       </div>
-      <button onClick={() => {
-        setDisplayCharacter(true)
-      }}
+      <button onClick={handleSubmit}
       >Display Character</button>
       <div>
         <h1>Hero Info</h1>
