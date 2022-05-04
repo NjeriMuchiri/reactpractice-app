@@ -50,7 +50,11 @@ function App() {
         <h1 style={{textAlign: 'center'}}>Hero Info</h1>
         {displayCharacter && (
         <ul>
-          <li>Kashee</li>
+          <li>{name}</li>
+          <li>{age}</li>
+          <li>{height}</li>
+          <li>{superPower}</li>
+          
         </ul>
         )}
       </div>
