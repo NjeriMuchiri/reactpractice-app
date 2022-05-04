@@ -7,11 +7,12 @@ function App() {
       const [age,setAge] = useState(0);
       const [height,setHeight] = useState(0);
       const [superPower,setSuperPower] = useState('');
-
+      const [displayCharacter, setDisplayCharacter] = useState(false);
 
   return (
     <div className="App">
       <h1 style={{textAlign: 'center'}}>Build A Hero </h1>
+      <div>
       <label>Name: </label>
       <input type="text" style={{margin: 5}} 
       onChange={(event) => 
@@ -40,10 +41,19 @@ function App() {
         setSuperPower(event.target.value)
         }}
       />
-      {name}
-      {age}
-      {height}
-      {superPower}
+      </div>
+      <button onClick={() => {
+        setDisplayCharacter(true)
+      }}
+      >Display Character</button>
+      <div>
+        <h1 style={{textAlign: 'center'}}>Hero Info</h1>
+        {displayCharacter && (
+        <ul>
+          <li>Kashee</li>
+        </ul>
+        )}
+      </div>
     </div>
   );
 }
