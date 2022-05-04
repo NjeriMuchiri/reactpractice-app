@@ -1,5 +1,5 @@
 .hero-sect{
-    min-height:70vh;
+    min-height:50vh;
     display:grid;
     place-items: center;
     gap:5%;

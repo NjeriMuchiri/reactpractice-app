@@ -5,7 +5,11 @@ function TodoList() {
 
 
   return (
-    <div>TodoList</div>
+      <>
+    <div className='todo_sect'>
+      <h1>Todo List</h1>
+    </div>
+      </>
   )
 }
 

@@ -1,0 +1,6 @@
+.todo_sect{
+    min-height: 70vh;
+    display:grid;
+    place-items:center;
+    gap:5%;
+}
