@@ -10,7 +10,7 @@ function Hero() {
       const [displayCharacter, setDisplayCharacter] = useState(false);
 
   return (
-    <div className="App">
+    <div className="hero-sect">
       <h1>Build A Hero </h1>
       <div>
       <label>Name: </label>
