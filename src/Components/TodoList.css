@@ -36,4 +36,9 @@
     color:#696969;
     font-weight: 800;
     letter-spacing: 0.1em;
+    cursor:pointer;
+    transition: all 500ms linear;
+}
+.todo__button:hover{
+    color:cadetblue;
 }
