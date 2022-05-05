@@ -42,3 +42,18 @@
 .todo__button:hover{
     color:cadetblue;
 }
+.todolist__list{
+    display:grid;
+    place-items: center;
+}
+.todolist__list li{
+    list-style-type: none;
+    padding:15px 30px;
+    border-radius: 20px;
+    color:antiquewhite;
+    background-color: cornflowerblue;
+    margin:5px;
+    text-align: center;
+    font-family:'Comfortaa';
+    font-size:1.3em;
+}

@@ -23,8 +23,7 @@ function TodoList() {
           <button 
           onClick = {addTask} className='todo__button'>Add Task</button>
       </div>
-      <hr />
-      <ul>
+      <ul className='todolist__list'>
         {todoList.map((val, index) =>{
           return <li key = {index}>
             {val}
