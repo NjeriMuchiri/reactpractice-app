@@ -1,5 +1,5 @@
 import './Hero.css';
-import React, {useState} from 'react';
+import React, {useState,useRef} from 'react';
 
 
 function Hero() {
@@ -9,10 +9,15 @@ function Hero() {
       const [superPower,setSuperPower] = useState('');
       const [displayCharacter, setDisplayCharacter] = useState(false);
 
-      let handleSubmit = (e) =>{
+    const inputDo = useRef(null);
+
+      const handleSubmit = (e) =>{
             e.preventDefault();
-      
-            setDisplayCharacter(true) 
+            setDisplayCharacter(true);
+            
+
+            inputDo.current.value='';
+
       }
 
   return (
@@ -20,28 +25,36 @@ function Hero() {
       <h1>Build A Hero </h1>
       <div>
       <label>Name: </label>
-      <input type="text" style={{margin: 5}} 
+      <input 
+      ref={inputDo}
+      type="text" style={{margin: 5}} 
       onChange={(event) => 
       {
         setName(event.target.value)
         }}
         /> 
       <label>Age: </label>
-      <input type="number" style={{margin: 5}}
+      <input 
+      ref={inputDo}
+      type="number" style={{margin: 5}}
       onChange={(event) => 
       {
         setAge(event.target.value)
         }}
         /> 
       <label>Height: </label>
-      <input type="number"  style={{margin: 5}}
+      <input 
+      ref={inputDo}
+      type="number"  style={{margin: 5}}
          onChange={(event) => 
       {
         setHeight(event.target.value)
         }}
       />
       <label>Superpower: </label>
-      <input type="text" style={{ margin: 5}}
+      <input 
+      ref={inputDo}
+      type="text" style={{ margin: 5}}
          onChange={(event) => 
       {
         setSuperPower(event.target.value)

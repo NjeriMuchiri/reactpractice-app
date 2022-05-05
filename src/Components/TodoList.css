@@ -48,11 +48,12 @@
 }
 .todolist__list li{
     list-style-type: none;
-    padding:15px 30px;
-    border-radius: 20px;
+    height:40px;
+    width:300px;
+    padding-top: 20px;
     color:antiquewhite;
     background-color: cornflowerblue;
-    margin:5px;
+    margin:10px;
     text-align: center;
     font-family:'Comfortaa';
     font-size:1.3em;
